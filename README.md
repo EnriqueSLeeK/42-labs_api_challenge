@@ -1,17 +1,16 @@
-# Project documentation
 
-## API
-### Introduction
+# API
+## Introduction
 This is a simple REST api written in C
 
-### Dependencies
+## Dependencies
 - Postgresql 13.6
 - Mongoose Network Library
 - Mjson
 - ANSI-C
 
 
-### Endpoints
+## Endpoints
 |path|GET|POST|DELETE|PATCH|PUT|
 |---|---|---|---|---|---|
 |/|O|X|X|X|X|
@@ -22,6 +21,6 @@ This is a simple REST api written in C
 |/videos/:video_id|O|X|X|X|X|
 
 
-## CLI
-### Introduction
+# CLI
+## Introduction
 A CLI tool that will make a summary of the api log file
