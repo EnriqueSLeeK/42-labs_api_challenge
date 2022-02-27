@@ -31,11 +31,11 @@ Installing postgresql and the library:
 sudo apt install postgresql
 ```
 ## Compiling and Removal
-Compiling
+Compiling:
 ```
 make api
 ```
-Removal
+Removal:
 ```
 make clean_api
 ```
