@@ -9,6 +9,12 @@ This is a simple REST api written in C
 |path|GET|POST|DELETE|PATCH|PUT|
 |---|---|---|---|---|---|
 |/|O|X|X|X|X|
+|/channel|O|O|X|X|X|
+|/channel/:channel_id|O|X|O|O|O|
+|/channel/:channel_id/:video_id|O|X|O|O|O|
+|/videos|O|O|X|X|X|
+|/videos/:video_id|O|X|X|X|X|
+
 
 ## CLI
 ### Introduction
