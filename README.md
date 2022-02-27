@@ -21,7 +21,7 @@ If for some reason the library is not bundled with the package do:
 ```
 pacman -S postgresql-libs
 ```
-Installing basic development tools (like gcc and make):
+Installing basic development tools:
 ```
 pacman -S base-devel
 ```
@@ -30,6 +30,7 @@ Installing postgresql and the library:
 ```
 sudo apt install postgresql
 ```
+Installing basic development tools:
 ```
 sudo apt-get install build-essential
 ```
