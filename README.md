@@ -5,6 +5,7 @@ This is a simple REST api written in C for the 42 labs selection
 
 ## Dependencies
 - Postgresql 13.6
+- libpq
 - Mongoose Network Library
 - Mjson
 - gcc (GNU compiler)
@@ -12,7 +13,7 @@ This is a simple REST api written in C for the 42 labs selection
 ## Installing the dependencies
 Some of them might not be necessary to install if they are present in your system.
 ### Arch linux
-Installing postgresql and the library required to do the connection:
+Installing postgresql and the library:
 ```
 pacman -S postgresql
 ```
@@ -25,11 +26,19 @@ Installing basic development tools (like gcc and make):
 pacman -S base-devel
 ```
 ### Ubuntu
-
+Installing postgresql and the library:
 ```
 sudo apt install postgresql
 ```
-
+## Compiling and Removal
+Compiling
+```
+make api
+```
+Removal
+```
+make clean_api
+```
 
 ## Endpoints
 ### Available operations
@@ -43,6 +52,16 @@ sudo apt install postgresql
 |/videos/:video_id|O|X|X|X|X|
 
 
-# CLI
+# CLI - tablefy
 ## Introduction
-A CLI tool that will make a summary of the api log file
+A CLI tool that will make a summary of the api log generating table with ASCII symbols
+
+## Compiling and Removal
+Compiling:
+```
+make cli
+```
+Removing:
+```
+make clean_cli
+```
