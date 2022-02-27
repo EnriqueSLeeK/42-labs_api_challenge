@@ -1,4 +1,4 @@
-PROG := api
+PROG := api_server
 PROG_CLI := get_log
 
 #CC := `curl-config --cc`
@@ -17,12 +17,12 @@ SRC_A := $(addprefix $(DIR_API_SRC), $(FILE_A))
 SRC_MONGOOSE := ./mongoose/mongoose.c
 SRC_MJSON := ./mjson/mjson.c
 
-test: $(SRC_S) $(SRC_MONGOOSE)
+$(PROG): $(SRC_S) $(SRC_MONGOOSE)
 	$(CC) $(FLAGS) -g -o $@ $(SRC_A) $(FILE_SQL) $(SRC_MONGOOSE) $(SRC_MJSON) $(LIBS)
 
 %: %.c
 	$(CC) $(FLAGS) $(LIBS)
 
 clean:
-	rm test
+	rm $(PROG)
 

@@ -59,7 +59,7 @@ int patch_handler(struct mg_connection *c, struct mg_http_message *hm)
         return (put_handler(c, hm));
       if (mjson_get_number(hm -> body.ptr, hm -> body.len, "$.creator_id", &creator.creator_id))
       {
-        asprintf(&buff_s, "%d", creator.creator_id);
+        asprintf(&buff_s, "%d", (int)creator.creator_id);
         return (one_param("UPDATE content_creator SET creator_id=$1 WHERE creator_id=$2",
             2, hm, buff_s, c));
       }
@@ -96,23 +96,23 @@ int patch_handler(struct mg_connection *c, struct mg_http_message *hm)
       {
         if (1 & flag && 2 & flag)
         {
-          asprintf(&buff_s, "%d", video.id);
-          asprintf(&buff_p, "%d", video.creator_id);
-          return (two_param("UPDATE video SET id=$1, creator_id=$2 WHERE id=$3 AND creator_id=$4",
+          asprintf(&buff_s, "%d", (int)video.id);
+          asprintf(&buff_p, "%d", (int)video.creator_id);
+          return (two_param("UPDATE video SET id=$1, creator_id=$2 WHERE id=$4 AND creator_id=$3",
                 4, hm, buff_s, buff_p, c));
         }
         else if (1 & flag && 4 & flag)
         {
-          asprintf(&buff_s, "%d", video.id);
+          asprintf(&buff_s, "%d", (int)video.id);
           asprintf(&buff_p, "%s", video.video_name);
-          return (two_param("UPDATE video SET id=$1, name=$2 WHERE id=$3 AND creator_id=$4",
+          return (two_param("UPDATE video SET id=$1, name=$2 WHERE id=$4 AND creator_id=$3",
                 4, hm, buff_s, buff_p, c));
         }
         else if (2 & flag && 4 & flag)
         {
-          asprintf(&buff_s, "%d", video.creator_id);
+          asprintf(&buff_s, "%d", (int)video.creator_id);
           asprintf(&buff_p, "%s", video.video_name);
-          return (two_param("UPDATE video SET creator_id=$1, name=$2 WHERE id=$3 AND creator_id=$4",
+          return (two_param("UPDATE video SET creator_id=$1, name=$2 WHERE id=$4 AND creator_id=$3",
                 4, hm, buff_s, buff_p, c));
         }
       }
@@ -120,20 +120,20 @@ int patch_handler(struct mg_connection *c, struct mg_http_message *hm)
       {
         if (1 & flag)
         {
-          asprintf(&buff_s, "%d", video.id);
-          return (one_param("UPDATE video SET id=$1 WHERE id=$2 AND creator_id=$3",
+          asprintf(&buff_s, "%d", (int)video.id);
+          return (one_param("UPDATE video SET id=$1 WHERE id=$3 AND creator_id=$2",
               3, hm, buff_s, c));
         }
         else if (2 & flag)
         {
-          asprintf(&buff_s, "%d", video.creator_id);
-          return (one_param("UPDATE video SET creator_id=$1 WHERE id=$2 AND creator_id=$3",
+          asprintf(&buff_s, "%d", (int)video.creator_id);
+          return (one_param("UPDATE video SET creator_id=$1 WHERE id=$3 AND creator_id=$2",
               3, hm, buff_s, c));
         }
         else if (4 & flag)
         {
           asprintf(&buff_s, "%s", video.video_name);
-          return (one_param("UPDATE video SET name=$1 WHERE id=$2 AND creator_id=$3",
+          return (one_param("UPDATE video SET name=$1 WHERE id=$3 AND creator_id=$2",
               3, hm, buff_s, c));
         }
       }

@@ -16,7 +16,7 @@ void  handler(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
     else if (mg_vcmp(method, "DELETE") == 0)
       logging(&(hm -> method), &(hm -> uri), hm -> headers, delete_handler(c, hm));
     else if (mg_vcmp(method, "PUT") == 0)
-      logging(&(hm -> method), &(hm -> uri), hm -> headers, post_handler(c, hm));
+      logging(&(hm -> method), &(hm -> uri), hm -> headers, put_handler(c, hm));
     else if (mg_vcmp(method, "PATCH") == 0)
       logging(&(hm -> method), &(hm -> uri), hm -> headers, patch_handler(c, hm));
     else
