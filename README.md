@@ -4,8 +4,14 @@
 ### Introduction
 This is a simple REST api written in C
 
-### Endpoints
+### Dependencies
+- Postgresql 13.6
+- Mongoose Network Library
+- Mjson
+- ANSI-C
 
+
+### Endpoints
 |path|GET|POST|DELETE|PATCH|PUT|
 |---|---|---|---|---|---|
 |/|O|X|X|X|X|
