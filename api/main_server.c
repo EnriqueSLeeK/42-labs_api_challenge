@@ -11,6 +11,7 @@ int main(void)
 {
   struct mg_mgr mgr;
 
+  create_log_dir();
   init_db_conn();
   mg_mgr_init(&mgr);
   init_signal(signal_handler);

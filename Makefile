@@ -8,7 +8,7 @@ FLAGS := -I./include
 
 FILE_A := main_server.c handler.c get_handler.c post_handler.c\
 		  put_handler.c delete_handler.c patch_handler.c craft_send.c\
-		  json_util.c uri_util.c
+		  json_util.c uri_util.c log_util.c
 DIR_API_SRC := ./api/
 
 FILE_SQL := ./sql/init_db.c ./sql/util_db.c

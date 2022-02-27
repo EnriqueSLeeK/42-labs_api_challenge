@@ -47,14 +47,14 @@ static void check_init_table(PGconn *conn)
 
     if (check_table(conn, res, "SELECT to_regclass('public.content_creator');") == 0)
     {
-        res = PQexec(conn, "CREATE TABLE content_creator(creator_id int PRIMARY KEY, followers int, channel text NOT NULL)");
+        res = PQexec(conn, "CREATE TABLE content_creator (creator_id int PRIMARY KEY, channel text)");
         if (PQresultStatus(res) != PGRES_COMMAND_OK)
             exit_db(conn, res);
         PQclear(res);
     }
     if (check_table(conn, res, "SELECT to_regclass('public.video')") == 0)
     {
-        res = PQexec(conn, "CREATE TABLE video (id int, creator_id int REFERENCES content_creator(creator_id), likes int, dislikes int, PRIMARY KEY(id, creator_id))");
+        res = PQexec(conn, "CREATE TABLE video (id int, creator_id int REFERENCES content_creator(creator_id), name text, PRIMARY KEY(id, creator_id))");
         if (PQresultStatus(res) != PGRES_COMMAND_OK)
             exit_db(conn, res);
         PQclear(res);
