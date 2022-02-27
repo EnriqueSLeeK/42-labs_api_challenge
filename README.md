@@ -30,6 +30,9 @@ Installing postgresql and the library:
 ```
 sudo apt install postgresql
 ```
+```
+sudo apt-get install build-essential
+```
 ## Compiling and Removal
 Compiling:
 ```
