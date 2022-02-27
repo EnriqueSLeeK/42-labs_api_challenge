@@ -7,7 +7,7 @@ This is a simple REST api written in C
 - Postgresql 13.6
 - Mongoose Network Library
 - Mjson
-- ANSI-C
+- gcc (GNU compiler)
 
 
 ## Endpoints
