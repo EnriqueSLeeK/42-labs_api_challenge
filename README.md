@@ -12,17 +12,27 @@ This is a simple REST api written in C for the 42 labs selection
 ## Installing the dependencies
 Some of them might not be necessary to install if they are present in your system.
 ### Arch linux
-Installing postgresql:
+Installing postgresql and the library required to do the connection:
 ```
 pacman -S postgresql
+```
+If for some reason the library is not bundled with the package do:
+```
+pacman -S postgresql-libs
 ```
 Installing basic development tools (like gcc and make):
 ```
 pacman -S base-devel
 ```
+### Ubuntu
+
+```
+sudo apt install postgresql
+```
 
 
 ## Endpoints
+### Available operations
 |path|GET|POST|DELETE|PATCH|PUT|
 |---|---|---|---|---|---|
 |/|O|X|X|X|X|
