@@ -1,7 +1,7 @@
 
 # API
 ## Introduction
-This is a simple REST api written in C for the 42 labs selection process
+This is a simple REST api written in C for the 42 labs selection
 
 ## Dependencies
 - Postgresql 13.6
