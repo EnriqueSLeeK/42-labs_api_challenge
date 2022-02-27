@@ -1,5 +1,5 @@
 PROG := api_server
-PROG_CLI := get_log
+PROG_CLI := tablefly
 
 #CC := `curl-config --cc`
 LIBS := -lpq
@@ -13,16 +13,32 @@ DIR_API_SRC := ./api/
 
 FILE_SQL := ./sql/init_db.c ./sql/util_db.c
 
+FILE_CLI := main.c cli_util.c init_cli.c
+DIR_CLI := ./log_cli/
+
+SRC_CLI := $(addprefix $(DIR_CLI), $(FILE_CLI))
+
 SRC_A := $(addprefix $(DIR_API_SRC), $(FILE_A))
+
 SRC_MONGOOSE := ./mongoose/mongoose.c
 SRC_MJSON := ./mjson/mjson.c
+
+api: $(PROG)
+
+cli: $(PROG_CLI)
+
+all: api cli
 
 $(PROG): $(SRC_S) $(SRC_MONGOOSE)
 	$(CC) $(FLAGS) -g -o $@ $(SRC_A) $(FILE_SQL) $(SRC_MONGOOSE) $(SRC_MJSON) $(LIBS)
 
-%: %.c
-	$(CC) $(FLAGS) $(LIBS)
+$(PROG_CLI): $(SRC_CLI)
+	$(CC) $(FLAGS) -g -o $@ $(SRC_CLI)
 
-clean:
+clean_api:
 	rm $(PROG)
 
+clean_cli:
+	rm $(PROG_CLI)
+
+.PHONY: clean all cli api
