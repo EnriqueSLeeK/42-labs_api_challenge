@@ -9,6 +9,18 @@ This is a simple REST api written in C
 - Mjson
 - gcc (GNU compiler)
 
+## Installing the dependencies
+Some of them might not be necessary to install if they are present in your system.
+### Arch linux
+Installing postgresql:
+```
+pacman -S postgresql
+```
+Installing basic development tools (like gcc and make):
+```
+pacman -S base-devel
+```
+
 
 ## Endpoints
 |path|GET|POST|DELETE|PATCH|PUT|
