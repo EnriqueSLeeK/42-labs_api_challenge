@@ -3,7 +3,7 @@
 ## Introdução
 Um api simples escrito em C seguindo a arquiterura REST para o processo seletivo do 42labs
 
-## Dependencias
+## Dependências
 - Postgresql 13.6
 - libpq
 - Mongoose Network Library
