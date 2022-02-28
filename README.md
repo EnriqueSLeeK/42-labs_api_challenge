@@ -1,15 +1,15 @@
 # Sumário
 - [API](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#api) 
-    - [Introdução](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#instalando-as-dependencias)
-    - [Dependências](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#compila%C3%A7%C3%A3o-e--remo%C3%A7%C3%A3o)
-    - [Instalando as dependencias](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#preparando-o-ambiente)
+    - [Introdução](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#introdu%C3%A7%C3%A3o)
+    - [Dependências](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#introdu%C3%A7%C3%A3o)
+    - [Instalando as dependencias](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#instalando-as-dependencias)
     - [Compilação e remoção](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#compila%C3%A7%C3%A3o-e--remo%C3%A7%C3%A3o)
-    - Preparando o ambiente
-    -  Como usar o api
-- CLI - tablefy
-    - Introdução
-    - Compilação e remoção
-    - Como usar
+    - [Preparando o ambiente](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#preparando-o-ambiente)
+    - [Como usar o api](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#como-usar-o-api)
+- [CLI - tablefy](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#cli---tablefy)
+    - [Introdução](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#introdu%C3%A7%C3%A3o-1)
+    - [Compilação e remoção](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#compila%C3%A7%C3%A3o-e-remo%C3%A7%C3%A3o-1)
+    - [Como usar](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#como-usar)
 
 # API - VidData
 ## Introdução

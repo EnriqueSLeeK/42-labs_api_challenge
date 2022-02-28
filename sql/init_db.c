@@ -13,7 +13,7 @@ void    init_db_conn(void)
 {
     PGconn *conn;
 
-    conn = PQconnectdb("user=postgres dbname=postgres");
+    conn = PQconnectdb("user=labs dbname=labs-db");
 
     if (PQstatus(conn) == CONNECTION_BAD)
     {
