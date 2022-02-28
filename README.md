@@ -76,7 +76,6 @@ $ systemctl start postgresql
 [postgres]$ createdb -O labs labs-db
 ```
 ## Como usar o api
-Embaixo temos os endpoints e seus as operações que podem ser feitas
 ### Endpoints
 #### Operações disponíveis
 |path|GET|POST|DELETE|PATCH|PUT|
