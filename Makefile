@@ -41,4 +41,7 @@ clean_api:
 clean_cli:
 	rm $(PROG_CLI)
 
+clean_all:
+	rm $(PROG) $(PROG_CLI)
+
 .PHONY: clean all cli api

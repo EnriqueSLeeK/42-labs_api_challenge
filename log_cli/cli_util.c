@@ -102,7 +102,8 @@ int	readable(char *path)
 {
 	if (access(path, R_OK) == 0)
 		return (1);
-	return (0);
+	printf("There is no log\n");
+	exit(2);
 }
 
 void	error_exit(char *msg)
