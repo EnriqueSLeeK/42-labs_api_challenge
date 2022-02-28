@@ -1,7 +1,7 @@
 # Sumário
-- [API](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#como-usar)
+- [API](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#api---viddata)
     - [Introdução](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#introdu%C3%A7%C3%A3o)
-    - [Dependências](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#introdu%C3%A7%C3%A3o)
+    - [Dependências](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#depend%C3%AAncias)
     - [Instalando as dependencias](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#instalando-as-dependencias)
     - [Compilação e remoção](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#compila%C3%A7%C3%A3o-e-remo%C3%A7%C3%A3o)
     - [Preparando o ambiente](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#preparando-o-ambiente)
