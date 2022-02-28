@@ -1,5 +1,17 @@
+# Sumário
+- [API](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#api) 
+    - [Introdução](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#instalando-as-dependencias)
+    - [Dependências](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#compila%C3%A7%C3%A3o-e--remo%C3%A7%C3%A3o)
+    - [Instalando as dependencias](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#preparando-o-ambiente)
+    - [Compilação e remoção](https://github.com/42sp/42labs-selection-process-v2-EnriqueSLeeK#compila%C3%A7%C3%A3o-e--remo%C3%A7%C3%A3o)
+    - Preparando o ambiente
+    -  Como usar o api
+- CLI - tablefy
+    - Introdução
+    - Compilação e remoção
+    - Como usar
 
-# API
+# API - VidData
 ## Introdução
 Um api simples escrito em C seguindo a arquiterura REST para o processo seletivo do 42labs
 
@@ -25,7 +37,7 @@ Instalando ferramentas básicas de desenvolvimento:
 pacman -S base-devel
 ```
 Para outras distribuições linux consulte o repositório oficial delas
-## Compilação e  remoção
+## Compilação e remoção
 Compilando
 ```
 make api
@@ -123,7 +135,7 @@ Requisição sem corpo(JSON). Interação por meio da `URI`
 # CLI - tablefy
 ## Introdução
 Uma ferramenta do estilo CLI para mostrar de maneira mais organizada os logs gerados pelo api
-## Compilação e  remoção
+## Compilação e remoção
 Compiland:
 ```
 make cli
