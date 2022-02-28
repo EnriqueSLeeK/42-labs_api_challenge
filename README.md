@@ -135,7 +135,7 @@ Requisição sem corpo(JSON). Interação por meio da `URI`
 ## Introdução
 Uma ferramenta do estilo CLI para mostrar de maneira mais organizada os logs gerados pelo api
 ## Compilação e remoção
-Compiland:
+Compilando:
 ```
 make cli
 ```
