@@ -1,5 +1,5 @@
 PROG := api_server
-PROG_CLI := tablefly
+PROG_CLI := tablefy
 
 #CC := `curl-config --cc`
 LIBS := -lpq
